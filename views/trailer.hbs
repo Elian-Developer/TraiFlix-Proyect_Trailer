@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+
+  <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+    {{#if successUpdated}}
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ successUpdated}}
+        </div>
+        <button class="close" type="button" data-dismiss="alert" aria-label="close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    {{/if}}
+
+    {{#each trailer}}
+    <a class="decoration" href="/trailer/details/{{_id}}">
+        <div class="col mt-3">
+          <div class="card shadow-sm zoom">
+            <img src="{{image}}" class="bd-placeholder-img card-img-top image" role="img">
+            <div class="card-body">
+              <h5 class="card-title fst-italic fw-bold">{{title}}</h5>
+              <p class="card-text text">{{summary}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <small class="text-body-secondary fw-bold text-center">{{year}}</small>
+              </div>
+            </div>
+          </div>
+        </div>
+    </a>
+        {{/each}} 
+          </div>
+        </div> 
+
+</body>
+</html>

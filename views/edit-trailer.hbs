@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-6 offset-3 mt-5 mb-5">
+            <div class="card">
+                <div class="card-header bg-dark text-primary text-center fst-italic">
+                    <h3>Editing {{trailer.title}} Trailer</h3>
+                </div>
+                <div class="card-body">
+                <form action="/trailer/edit/{{trailer._id}}" method="post">
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" id="title" class="form-control" name="title" value="{{trailer.title}}">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="year" class="form-label">Year</label>
+                            <input type="number" id="year" class="form-control" name="year" value="{{trailer.year}}">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 mb-3">
+                            <label for="directors" class="form-label">Directors</label>
+                            <input type="text" id="directors" class="form-control" name="directors" value="{{trailer.directors}}">
+                        </div>
+                        <div class="col-6 mb-3">
+                            <label for="actors" class="form-label">Actors</label>
+                            <input type="text" id="actors" class="form-control" name="actors" value="{{trailer.actors}}">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="summary" class="form-label">Summary</label>
+                        <textarea type="text" id="summary" class="form-control" name="summary">{{trailer.summary}}</textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">URL Image</label>
+                        <input type="text" id="image" class="form-control" name="image"  value="{{trailer.image}}">
+                    </div>
+                    <div>
+                        <label for="trailerUrl" class="form-label">URL Trailer</label>
+                        <input type="text" id="trailerUrl" class="form-control" name="UrlTrailer" value="{{trailer.trailerUrl}}">
+                    </div>
+
+                    <button type="submit" class="btn btn-outline-primary mt-3 float-end">Save</button>
+                    <a href="/" class="btn btn-outline-warning mt-3 float-end me-2">Back</a>
+                </form>
+            </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

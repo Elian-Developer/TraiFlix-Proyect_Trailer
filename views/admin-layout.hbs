@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+  <div class="container mt-3 mb-3">
+        <a href="/add-trailer" class="btn btn-outline-primary mb-3">Create New <i class=" fa fa-plus-circle"></i></a>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"> 
+    {{#each trailer}}
+        <div class="col mt-2">
+          <div class="card shadow-sm zoom">
+            <img src="{{image}}" class="bd-placeholder-img card-img-top image" role="img">
+            <div class="card-body">
+              <h4 class="card-title">{{title}}</h4>
+              <p class="card-text text">{{summary}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <a href="/trailer/edit/{{_id}}" class="btn btn-sm btn-outline-success">Edit <i class="fas fa-edit"></i></a>
+                  <a href="/trailer/delete/{{_id}}" class="btn btn-sm btn-outline-danger">Delete <i class="fas fa-trash"></i></a>
+                </div>
+                <small class="text-body-secondary fw-bold"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">{{year}}</font></font></small>
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/each}} 
+          </div>
+        </div> 
+
+</body>
+</html>

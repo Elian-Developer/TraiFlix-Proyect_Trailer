@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container-fluid" >
+        <div class="col-6 offset-3 mt-5 mb-5">
+            <form action="/trailer/delete/{{trailer._id}}" method="post">
+            <div class="card">
+                <div class="card-header bg-dark text-center fst-italic text-white">
+                    <h3>Removing a <span class="text-primary">{{trailer.title}}</span> Trailer</31>
+                </div>
+                <div class="card-body">
+                    <h6>¿Are you sure you want delete <span class="fw-bold fst-italic">{{trailer.title}}</span> Trailer? if you press "Delete" this action cannnot return 
+                    and the trailer will be permanently delete.</h6>
+                </div>
+            <div class="mt-2 mb-2">
+                <button type="submit" class="btn btn-outline-primary float-end me-3">Remove</button>
+                <a href="/" class="btn btn-outline-warning float-end me-2">Back</a>
+            </div>
+        
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

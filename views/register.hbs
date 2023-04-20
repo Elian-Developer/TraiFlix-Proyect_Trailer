@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/index.css">
+</head>
+<body>
+
+    <section class="">
+
+  <div class="p-5 bg-image" style="
+        background-image: url('/assets/img/logo.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width:100%;
+        margin-top: -90px;
+        height: 340px;
+        "></div>
+
+  <div class="card center mb-5" style="
+        width: 50%;
+        margin-top: -110px;
+        background: hsla(0, 0%, 100%, 0.8);
+        backdrop-filter: blur(30px);
+        ">
+    <div class="card-body py-5 px-md-5">
+
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-6">
+          <h3 class="fw-bold mb-5 fst-italic text-center">Register Now in <span class="text-dark">Trai</span><span class="text-primary">Flix</span></h3>
+          <form action="/register" method="post">
+      
+              <div class="mb-4">
+                <div class="form-outline">
+                  <label class="form-label" for="name">Name</label>
+                  <input type="text" id="name" class="form-control" name="name" value="{{name}}"/>
+                </div>
+              </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="email">Email address</label>
+              <input type="email" id="email" class="form-control" name="email" value="{{email}}"/>
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="password">Password</label>
+              <input type="password" id="password" class="form-control" name="password" />
+            </div>
+
+            <div class="form-outline mb-4">
+              <label class="form-label" for="Confirmpassword">Confirm Password</label>
+              <input type="password" id="Confirmpassword" class="form-control" name="confirmPassword"/>
+            </div>
+
+            <div class="form-check d-flex justify-content-center mb-4">
+              <input class="form-check-input me-2" type="checkbox" value="" id="" checked />
+              <label class="form-check-label" for="">
+                Subscribe to our Trailer Page
+              </label>
+            </div>
+            <center><button type="submit" class="btn btn-outline-primary btn-block mb-4">Register</button></center>
+
+            <div class="text-center">
+              <p>or sign up with:</p>
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-facebook-f"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-google"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-twitter"></i>
+              </button>
+
+              <button type="button" class="btn btn-link btn-floating mx-1">
+                <i class="fab fa-github"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
