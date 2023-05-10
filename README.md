@@ -25,6 +25,31 @@ para los estilos.
 
 - ***Pagina Principal donde se muestran todos los Pokemones registrados.***
 
+![image - 1](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/9493dc73-1884-4465-8e5c-9fae82809a1e)
+
+- ***Vista del login para iniciar sesionen TraiFlix***
+
+![image - 2](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/d5634382-4709-4e1d-a1cd-a65875edb958)
+
+- ***Vista del register para crearse un usuario en TraiFlix***
+
+![image - 3](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/8a97a526-243b-4009-bbc3-7ba53b930bd8)
+
+- ***Vista del Mantenimiento de los Trailer (solou suarios con sesion iniciada pueden hacer eso)***
+
+![image - 4](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/f22dd396-3878-4fba-b895-02f739f621a9)
+
+- ***Vista del Mantenimiento de los Trailer (Para editar un trailer)***
+
+![image - 5](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/9ec3398a-c49c-4a30-98fe-a3bbbb39fbfb)
+
+- ***Vista del Mantenimiento de los Trailer (Para eliminar un trailer)***
+
+![image - 6](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/094e6345-f0e6-4586-a4fc-d4362c7d2e37)
+
+- ***Vista de detalles del trailer***
+
+![image - 7](https://github.com/Elian-Developer/TraiFlix-Proyect_Trailer/assets/107364306/9151d9a8-e369-4e72-9d36-d9aca8ff6c0e)
 
 ## *Construido con* 🛠️
 
